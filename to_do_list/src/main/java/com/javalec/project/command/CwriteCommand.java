@@ -9,10 +9,12 @@ public class CwriteCommand implements PCommand {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		String cName = request.getParameter("cName");
+		String wName = request.getParameter("wName");
+		String wContent = request.getParameter("wContent");
+		String wFinish = request.getParameter("wFinish");
 	
 		Write_dao dao = new Write_dao();
-		dao.cwrite(cName);
+		dao.cwrite(wName , wContent , wFinish);
 
 	}
 

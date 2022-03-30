@@ -4,47 +4,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>cwrite</title>
+<title>글작성</title>
 </head>
 <body>
-	<table border="1">
-	<th><h1>이승민의 To do list</h1></th>
-	</table>
+	
+	<h3>리스트 입력</h3>
 	
 	<table border="0">
 		<form action="cwrite.do" method="post">
 			<tr>
-				<td>제목 : </td>
-				<td><input type="text" name="cName" size="30"></td>
+				<td align="right">카테고리 이름</td>
+				<td><input type="text" name="wName" size="30"></td>
 			</tr>
 			<tr>
-			<td></td>
-			<td></td>
+				<td align="right">내용</td>
+				<td><textarea name ="wContent" rows="20" cols="50"></textarea></td>
 			</tr>
 			<tr>
-			<td></td>
-			<td></td>
+				<td align="right">완료 여부</td>
+				<td><input type="radio" name="wFinish" checked="checked" value="X">X
+					<input type="radio" name="wFinish" value="O">O</td>
 			</tr>
 			<tr>
-			<td></td>
-			<td></td>
+				<td><input type="submit" value="입력"></td></form>
+			<form action="detaillist.do" method="post">
+				<td><input type="submit" value="목록"></td></form>
 			</tr>
-			<tr>
-			<td></td>
-			<td></td>
-			</tr>
-			<tr>
-			<td></td>
-			<td></td>
-			</tr>
-			<tr>
-				<td colspan="2"><input type="submit" value="카테고리 이름 등록">
-			</form>
-			<form action="categorylist.do" method="post">
-				<td colspan="2"><input type="submit" value="취소">
-			</tr>
-			
-			</form>
+		
 	</table>
 </body>
 </html>
