@@ -1,7 +1,6 @@
 package com.javalec.project.dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 
 import javax.naming.Context;
