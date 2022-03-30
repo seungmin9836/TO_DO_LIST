@@ -13,6 +13,7 @@
 </style>
 <meta charset="UTF-8">
 <title>로그인 화면</title>
+<h1>영진</h1>
 </head>
 <body>
 <div class = "modify">
